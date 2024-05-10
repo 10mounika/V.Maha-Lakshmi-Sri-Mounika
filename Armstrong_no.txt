@@ -1,0 +1,15 @@
+class Solution {
+    static String armstrongNumber(int n){
+        int sum=0,num=n,r;
+        while(n>0)
+        {
+            r=n%10;
+            sum=sum+(int)Math.pow(r,3);
+            n=n/10;
+        }
+        if(sum==num)
+            return "Yes";
+        else
+            return "No";
+    }
+}

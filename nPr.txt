@@ -1,0 +1,15 @@
+class Solution{
+    static long nPr(long n, long r){
+        long fac=1,fact1=1,res=1;
+        for(int i=1;i<=n;i++)
+        {
+            fac=fac*i;
+        }
+        for(int i=1;i<=n-r;i++)
+        {
+            fact1=fact1*i;
+        }
+        res=fac/fact1;
+        return res;
+    }
+}

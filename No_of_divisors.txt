@@ -1,0 +1,17 @@
+class Solution{
+    static long count_divisors(int N){
+        long count=0;
+        int sq=(int)Math.sqrt(N);
+        for(int i=1;i<=sq;i++)
+        {
+            if(N%i==0)
+            {
+                if(i%3==0)
+                    count++;
+                if(i!=N/i && (N/i)%3==0)
+                    count++;
+            }
+        }
+        return count;
+    }
+}

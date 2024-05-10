@@ -1,0 +1,6 @@
+class Solution{
+    static int addition(int A, int B){
+        int sum=A+B;
+        return sum;
+    }
+}
